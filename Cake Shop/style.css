@@ -111,73 +111,140 @@ html::-webkit-scrollbar-thumb{
     background-size: cover;
     background-position: center center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries for web responsive */
-
-@media(max-width:991px){
-    html{
-        font-size: 55%;     
-    }
-    .header{
-        padding: 1.3rem 3rem;
-    }
+.home .homecontent{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+.home .homecontent h2{
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
 }
 
-@media (max-width:768px) {
-    #menu-bar{
-        display: inline-block;
-    }
-    .header .navbar{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 25rem;
-        background-color: var(--white);
-        color: var(--black);
-        height: 80vh;
-    }
-    .header .navbar.active{
-        right: 0;
-    }
-    .header .navbar a{
-        display: block;
-        font-size: 2rem;
-        color: black;
-        margin: 1.5rem;
-    }
+.home .homecontent p{
+    font-size: 1.8rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+.home .homecontent .home-btn{
+    height: 3rem;
+}
+.home .homecontent .home-btn button{
+    font-size: 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+.home .homecontent .home-btn button:hover{
+    font-size: 2rem;
+}
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+.product .row{
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+.product .product-row .box{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+}
+.product .product-row .img img{
+    height: 100%;
+    width: 100%;
+}
+.product .product-row .img img:hover{
+    transform: scale(1.1);
+}
+.product .product-row .content{
+    margin-bottom: 4rem;
+}
+.product .product-row .content h3{
+    font-size: 4rem;
+    color: var(--black);
+}
+.product .product-row .product-content p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+.product .product-row .product-content .orderNow{
+    height: 3rem;
+    margin-top: 2rem;
+}
+.product .product-row .product-content .orderNow button{
+    font-size: 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+.product .product-row .product-content .orderNow button:hover{
+    font-size: 2rem;
+}
+.blogs{
+    background: url(images/cake-back.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.blogs  .blogs-row .box {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    flex-wrap: wrap;
+}
+.blogs .blogs-row .box .img{
+    flex: 1 1 45rem;
+}
+.blogs .blogs-row .box .img img{
+    width: 100%;
+    padding: 5rem;
+}
+.blogs .blogs-row .box .content{
+    flex: 3 3 45rem;
+    padding: 2rem;
+}
+.blogs .blogs-row .box .content h3{
+    font-size: 3.5rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+.blogs .blogs-row .box .content p{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.blogs .blogs-row .box .content a{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.blogs .blogs-row .box .content a:hover{
+    color: var(--black);
+    text-shadow: var(--box-shadow);
 }
 
-@media(max-width:600px){
-    html{
-        font-size: 50%;
-    }
-}
+
